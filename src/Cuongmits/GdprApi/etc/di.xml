@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Cuongmits\GdprApi\Api\GetGdprDataInterface" type="Cuongmits\GdprApi\Api\Get" />
+    <preference for="Cuongmits\GdprApi\Api\AnonymiseGdprDataInterface" type="Cuongmits\GdprApi\Api\Anonymise" />
+    <preference for="Cuongmits\GdprApi\Api\DeleteGdprDataInterface" type="Cuongmits\GdprApi\Api\Delete" />
+</config>

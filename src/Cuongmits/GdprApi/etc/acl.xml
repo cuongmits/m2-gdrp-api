@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Cuongmits_GdprApi::manage" title="toom - Manage GDPR APIs" sortOrder="10">
+                    <resource id="Cuongmits_GdprApi::get" title="Get data" translate="title" sortOrder="1"/>
+                    <resource id="Cuongmits_GdprApi::delete" title="Delete data" translate="title" sortOrder="2"/>
+                    <resource id="Cuongmits_GdprApi::anonymise" title="Anonymise data" translate="title" sortOrder="3"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

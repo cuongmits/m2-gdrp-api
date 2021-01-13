@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/toom/gdpr/get" method="GET">
+        <service class="Cuongmits\GdprApi\Api\GetGdprDataInterface" method="get" />
+        <resources>
+            <resource ref="Cuongmits_GdprApi::get" />
+        </resources>
+    </route>
+    <route url="/V1/toom/gdpr-api/anonymise/firstname/:firstname/lastname/:lastname/email/:email/debitor/:debitorNumber/loyalty/:loyaltyNumber" method="PUT">
+        <service class="Cuongmits\GdprApi\Api\AnonymiseGdprDataInterface" method="anonymise" />
+        <resources>
+            <resource ref="Cuongmits_GdprApi::anonymise" />
+        </resources>
+    </route>
+    <route url="/V1/toom/gdpr-api/get/firstname/:firstname/lastname/:lastname/email/:email/debitor/:debitorNumber/loyalty/:loyaltyNumber" method="DELETE">
+        <service class="Cuongmits\GdprApi\Api\DeleteGdprDataInterface" method="delete" />
+        <resources>
+            <resource ref="Cuongmits_GdprApi::delete" />
+        </resources>
+    </route>
+</routes>
